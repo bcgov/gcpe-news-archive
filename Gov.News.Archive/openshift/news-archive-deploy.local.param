@@ -1,0 +1,16 @@
+#=========================================================
+# OpenShift template parameters for:
+# Component: Gov.News.Archive
+# JSON Template File: templates/news-archive/news-archive-deploy.json
+#=========================================================
+# NAME=news-archive
+# SOURCE_IMAGE_NAME=news-proxy
+# APPLICATION_DOMAIN=news-archive-gcpe-news-dev.pathfinder.gov.bc.ca
+# IMAGE_NAMESPACE=gcpe-news-tools
+# TAG_NAME=dev
+# ASPNETCORE_ENVIRONMENT=Development
+CPU_LIMIT=1
+MEMORY_LIMIT=1Gi
+CPU_REQUEST=10m
+MEMORY_REQUEST=500Mi
+# DATABASE_SERVICE_NAME=mongodb
