@@ -1,0 +1,15 @@
+{
+  "name": "gcpe-news-api-client-master",
+  "version": "1.0.0",
+  "description": "C# Client for BC Gov News API. ======================",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autorest": "^2.0.4215"
+  }
+}

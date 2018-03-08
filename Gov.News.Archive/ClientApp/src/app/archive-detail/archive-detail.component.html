@@ -1,0 +1,45 @@
+<div id="main-content" class="template content">
+
+  <h2 *ngIf="!archive">Loading...</h2>
+  <div class="story-page" *ngIf="archive">
+    <a href="#" class="print-document" alt="Print" title="Print">Print</a>
+
+
+    <h3>{{ archive.ministryText }}</h3>
+
+    <div class="print-title">British Columbia News</div>
+
+    <!--googleon: all-->
+    <h2 class="story-lang primary">{{ archive.title }}</h2>
+    <!--googleoff: all-->
+
+    <div class="print-url">https://news.gov.bc.ca/16435</div>
+    <p> {{ archive.dateReleased | date :'mediumDate'}}</p>
+
+
+  <div class="story-body">
+    <div class="story-copy story-lang primary ">
+      <div class="story-expander">
+        <!--googleon: all-->
+        <span [innerHTML]="archive.body | safeHtml"></span>
+        <!--googleoff: all-->
+        <div class="article-fade"> </div>
+      </div>
+      <a href="#" class="link-button expand">Expand Story</a>
+      <a href="#" class="link-button collapse">Contract Story</a>
+    </div>
+
+    <div class="comm-contacts-body-section">
+      <div class="comm-contacts-body comm-contacts story-lang primary">
+        <div class="comm-contacts">
+          <h5>Media Contacts</h5>
+          <div class="comm-contact"><h6>Sonja Zoeller</h6>Ministry of Finance<br>250 387-1248<br>Sonja.Zoeller@gov.bc.ca</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+</div>
+  

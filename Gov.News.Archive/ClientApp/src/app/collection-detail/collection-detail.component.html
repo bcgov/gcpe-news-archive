@@ -1,0 +1,27 @@
+<div id="main-content" class="template content">
+  <div class="search">
+    <div class="search-body">
+      <h3><span *ngIf="collection">News Archives from {{ collection.name }}</span></h3>
+    </div>
+    <div>
+      <h2 *ngIf="!archives">Loading...</h2>
+      <div id="ContentPlaceHolder1_releaseBlock">
+        <div class="article" *ngFor="let item of archives">
+          <h2>
+            <a href="/archives/{{ item.id }}" title="{{ item.title }}" rel="[facebox]" rev="iframe|404|580.8000000000001">
+              <span [innerHTML]="item.title | safeHtml"></span>
+            </a>
+          </h2>
+          <div class="item-date">{{ item.dateReleased | date :'mediumDate'}}</div>
+          <div class="item-content">
+            <div class="item-text">
+              <p [innerHTML]="item.preview | safeHtml"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
