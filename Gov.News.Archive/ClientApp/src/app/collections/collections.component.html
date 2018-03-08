@@ -1,0 +1,22 @@
+<div id="main-content" class="template content">
+  <div class="search">
+    <div class="search-body">
+      <h3>Archived News Releases Index</h3>
+    </div>
+    <div>
+      <p>
+        This archive provides you with access to news releases distributed prior to the last election.  For access to the list of current news releases
+        please visit <a href="https://news.gov.bc.ca/">news.gov.bc.ca</a>.
+      </p>
+      <h4> Archive List: </h4>
+      <h6 *ngIf="!collections">Loading...</h6>
+      <ul class="list-view">
+        <li *ngFor="let item of collections">
+          <a [routerLink]="['/collections',item.id]">
+            <span>{{ item.name }}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

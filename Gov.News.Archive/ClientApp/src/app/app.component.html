@@ -1,0 +1,101 @@
+<!--googleoff: all-->
+<div id="header">
+  <div id="header-top">
+    <div class="content">
+      <div id="logo">
+        <a href="http://gov.bc.ca"><img [src]="logoPath" alt="Government of B.C." title="Government of B.C."></a>
+      </div>
+    </div>
+  </div>
+  <div id="header-bottom">
+    <div class="content">
+      <div class="search" style="">
+        <form action="/Search" method="get">
+          <input name="q" type="text" placeholder="Search for Archived News Releases" />
+          <div class="search-trigger"> </div>
+        </form>
+      </div>
+      <div>
+        <h1><a href="/">BC Gov News Archive</a></h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="nav-container">
+  <div class="shadow-box">
+    <div class="content">
+      <div class="nav">
+        <ul class="inline">
+          <li><a href="/">Home</a></li>
+          <li><a href="" [routerLink]="['/search']">Search for Archived News Releases</a></li>
+          <li><a href="" [routerLink]="['/collections']">Archived News Releases</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<main class="container">
+  <div id="container-fluid">
+    <div class="navbar-header">
+      <nav>
+        <ul class="nav navbar-nav">
+          
+        </ul>
+      </nav>
+
+    </div>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</main>
+
+
+<div id="footer">
+  <div class="content">
+    <div class="connect">
+      <h4>Connect with Us:</h4>
+      <ul class="inline">
+
+        <li><a href="https://www.gov.bc.ca/">BC Gov</a></li>
+        <li><a href="https://news.gov.bc.ca/connect#facebook">Facebook</a></li>
+        <li><a href="https://news.gov.bc.ca/connect#twitter">Twitter</a></li>
+        <li><a href="https://news.gov.bc.ca/connect#flickr">Photos</a></li>
+        <li><a href="https://news.gov.bc.ca/connect#youtube">Videos</a></li>
+        <li><a href="https://news.gov.bc.ca/newsletters">Newsletters</a></li>
+        <li><a href="https://news.gov.bc.ca/connect#rss">RSS Feeds</a></li>
+
+      </ul>
+    </div>
+    <div class="clear"></div>
+    <hr />
+
+    <ul class="inline">
+      <li><a href="https://news.gov.bc.ca">Home</a></li>
+      <li><a href="http://www2.gov.bc.ca/gov/admin/disclaimer.page">Disclaimer</a></li>
+      <li><a href="https://news.gov.bc.ca/privacy">Privacy</a></li>
+      <li><a href="http://www2.gov.bc.ca/gov/admin/accessibility.page">Accessibility</a></li>
+      <li><a href="http://www2.gov.bc.ca/gov/admin/copyright.page">Copyright</a></li>
+      <li><a href="https://news.gov.bc.ca/contact">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<div id="end-cap">
+  <ul>
+    <li class="connect-label">Connect</li>
+    <li><a href="/connect#facebook"><img src="assets/images/SocialMedia/20x20-white-facebook.png" alt="Facebook" /></a></li>
+    <li><a href="/connect#twitter"><img src="assets/images/SocialMedia/20x20-white-twitter.png" alt="Twitter" /></a></li>
+    <li><a href="/connect#flickr"><img src="assets/images/SocialMedia/20x20-white-flickr.png" alt="Flickr" /></a></li>
+    <li><a href="/connect#youtube"><img src="assets/images/SocialMedia/20x20-white-youtube.png" alt="Youtube" /></a></li>
+  </ul>
+  <a href="/connect" class="read-more view-all-media">View all Social Media</a>
+</div>
+
+
+
+
+<script src="/Scripts/minimenu.js?v=jvIJMjP3Ev4tgBrLgill7UacVxIVH4sOxuzCMzNzi5Y" type="text/javascript"></script>
