@@ -29,15 +29,15 @@ namespace Gov.News.Archive.Controllers
         public string GetToken(string secret)
         {
             string result = "Invalid secret.";
-            string configuredSecret = Configuration["Tokens:Key"];
+            string configuredSecret = Configuration["Tokens_Key"];
             if (configuredSecret.Equals(secret))
             {
-                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Tokens:Key"]));
+                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Tokens_Key"]));
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
                 var jwtSecurityToken = new JwtSecurityToken(
-                    Configuration["Tokens:Issuer"],
-                    Configuration["Tokens:Issuer"],
+                    Configuration["Tokens_Issuer"],
+                    Configuration["Tokens_Issuer"],
                     expires: DateTime.UtcNow.AddYears(5),
                     signingCredentials: creds
                     );
