@@ -15,7 +15,7 @@ export builds=${builds:-""}
 
 
 # The images to be tagged after build
-export images=${images:-""}
+export images=${images:-"news-archive"}
 
 # The routes for the project
 export routes=${routes:-""}

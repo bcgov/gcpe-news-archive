@@ -99,7 +99,7 @@
       "displayName": "Git Repo URL",
       "description": "The URL to your GIT repo.",
       "required": true,
-      "value": "https://github.com/GeorgeWalker/gcpe-news-archive-api-test.git"
+      "value": "https://github.com/bcgov/gcpe-news-archive.git"
     },
     {
       "name": "GIT_REF",
@@ -141,7 +141,7 @@
       "displayName": "DotNet Startup Project",
       "description": "The path to the startup project for the .Net application.",
       "required": true,
-      "value": "Gov.News.Archive.Api"
+      "value": "Gov.News.Archive"
     },
     {
       "name": "OUTPUT_IMAGE_TAG",

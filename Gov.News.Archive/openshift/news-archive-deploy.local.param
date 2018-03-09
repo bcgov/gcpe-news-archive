@@ -8,7 +8,7 @@
 # APPLICATION_DOMAIN=news-archive-gcpe-news-dev.pathfinder.gov.bc.ca
 # IMAGE_NAMESPACE=gcpe-news-tools
 # TAG_NAME=dev
-# ASPNETCORE_ENVIRONMENT=Development
+# ASPNETCORE_ENVIRONMENT=Production
 CPU_LIMIT=1
 MEMORY_LIMIT=1Gi
 CPU_REQUEST=10m

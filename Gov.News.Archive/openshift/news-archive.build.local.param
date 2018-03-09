@@ -4,7 +4,7 @@
 # JSON Template File: templates/news-archive/news-archive.build.json
 #=========================================================
 # NAME=news-archive.build
-GIT_REPO_URL=https://github.com/bcgov/gcpe-news-api-client.git
+GIT_REPO_URL=https://github.com/bcgov/gcpe-news-archive.git
 GIT_REF=master
 # SOURCE_CONTEXT_DIR=
 # SOURCE_IMAGE_KIND=DockerImage
