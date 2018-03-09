@@ -1,1 +1,0 @@
-autorest --verbose --input-file=swagger.json --output-folder=generated --csharp --use-datetimeoffset --override-client-name=Client --namespace=Gov.News.Api --generate-empty-classes
