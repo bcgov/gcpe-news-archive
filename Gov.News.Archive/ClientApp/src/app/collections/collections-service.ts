@@ -14,7 +14,7 @@ export class CollectionsService {
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
 
-    return this.http.get("http://localhost:9010/api/archives/" + id, {
+    return this.http.get("/api/archives/" + id, {
       headers: headers
     })
       .toPromise()
@@ -38,7 +38,7 @@ export class CollectionsService {
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
 
-    return this.http.get("http://localhost:9010/api/collections/" + id + "/archives", {
+    return this.http.get("/api/collections/" + id + "/archives", {
       headers: headers
     })
       .toPromise()
@@ -69,7 +69,7 @@ export class CollectionsService {
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
 
-    return this.http.get("http://localhost:9010/api/collections", {
+    return this.http.get("/api/collections", {
       headers: headers
     })
       .toPromise()
@@ -98,7 +98,7 @@ export class CollectionsService {
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
 
-    return this.http.get("http://localhost:9010/api/collections/" + id , {
+    return this.http.get("/api/collections/" + id , {
       headers: headers
     })
       .toPromise()
